@@ -1,19 +1,9 @@
-.theme-light-color {
-    color: #e35183;
-}
-.theme-dark-color {
-    color: #78002e;
-}
-.theme-primary-color {
-    color: #ad1457;
-}
-
 .theme-light-bg {
-    background-color: #e35183;
+    background-color: #6746c3;
 }
 .theme-dark-bg {
-    background-color: #78002e;
+    background-color: #000063;
 }
 .theme-primary-bg {
-    background-color: #ad1457;
+    background-color: #311b92;
 }
