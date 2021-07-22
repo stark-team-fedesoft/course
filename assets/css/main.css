@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: #37474f;
     font-family: sans-serif;
@@ -99,4 +100,14 @@ body{
 .btn:hover {
     background-color: #37474f;
     color: white;
+=======
+.theme-light-bg {
+    background-color: #6746c3;
+}
+.theme-dark-bg {
+    background-color: #000063;
+}
+.theme-primary-bg {
+    background-color: #311b92;
+>>>>>>> 5ce4d691501b2606e5aef270c13fec686a4c6c62
 }
