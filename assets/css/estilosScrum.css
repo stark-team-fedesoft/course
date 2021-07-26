@@ -1,0 +1,46 @@
+.nav,.d-flex{
+
+    color: honeydew;
+    text-align: center;
+    
+}
+.card-img, .card-img-top{
+width:85%;
+display:block;
+justify-content: center;
+margin:auto;
+}
+.h3{
+    text-align: center;
+}
+.nav-item, .nav-link{
+    color: white;
+
+}
+element.style {
+justify-content: center;
+}
+.title {
+    padding: 2em;
+    text-align: center;
+}
+.contenido {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.texto-contenido {
+    padding: 1em;
+}
+.lead,.featurette-heading,.h4,.p,.li,.navbar-brand,.container-fluid{
+    font-family: 'Otomanopee One', sans-serif;   
+}
+
+.header {
+    border-bottom: 2px solid #e8eaed;
+    padding: 1em;
+}
+.pagina{
+    background-color: #202124;
+    color: #e8eaed;
+}
+
