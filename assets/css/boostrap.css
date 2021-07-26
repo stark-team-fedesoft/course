@@ -1,0 +1,16 @@
+.title {
+    padding: 2em;
+    text-align: center;
+}
+.contenido {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.texto-contenido {
+    padding: 1em;
+}
+
+img{
+    display:block;
+margin:auto;
+}
