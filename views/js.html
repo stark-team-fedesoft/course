@@ -96,31 +96,34 @@
                             <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-settings" type="button" role="tab"
                                 aria-controls="v-pills-settings" aria-selected="false">Comentarios</button>
-                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Condicional if
+                            <button class="nav-link widget" id="v-pills-if-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-if" type="button" role="tab"
+                                aria-controls="v-pills-if" aria-selected="false">Condicional if
                                 </button>
-                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Condicional switch </button>
-                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Bucle for</button>
-                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Bucle while</button>
-                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Uso de arrays</button>
-                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Ojetos Json</button>
-                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Funciones</button>
-                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">DOM</button>
+                            <button class="nav-link widget" id="v-pills-switch-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-switch" type="button" role="tab"
+                                aria-controls="v-pills-switch" aria-selected="false">Condicional switch </button>
+                            <button class="nav-link widget" id="v-pills-for-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-for" type="button" role="tab"
+                                aria-controls="v-pills-for" aria-selected="false">Bucle for</button>
+                            <button class="nav-link widget" id="v-pills-while-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-while" type="button" role="tab"
+                                aria-controls="v-pills-while" aria-selected="false">Bucle while</button>
+                            <button class="nav-link widget" id="v-pills-doWhile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-doWhile" type="button" role="tab"
+                                aria-controls="v-pills-doWhile" aria-selected="false">Bucle do while</button>
+                            <button class="nav-link widget" id="v-pills-arrays-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-arrays" type="button" role="tab"
+                                aria-controls="v-pills-arrays" aria-selected="false">Uso de arrays</button>
+                            <button class="nav-link widget" id="v-pills-json-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-json" type="button" role="tab"
+                                aria-controls="v-pills-json" aria-selected="false">Ojetos Json</button>
+                            <button class="nav-link widget" id="v-pills-funciones-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-funciones" type="button" role="tab"
+                                aria-controls="v-pills-funciones" aria-selected="false">Funciones</button>
+                            <button class="nav-link widget" id="v-pills-dom-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-dom" type="button" role="tab"
+                                aria-controls="v-pills-dom" aria-selected="false">DOM</button>
                         </div>
                         <div class="tab-content widget" id="v-pills-tabContent">
                             <div class="tab-pane fade show active widget" id="v-pills-home" role="tabpanel"
@@ -286,16 +289,56 @@
                                         Este ejemplo utiliza un comentario de varias líneas (un bloque de comentarios) para explicar el código:</p>
                                         <img src="../assets/img/pagjs/imag4.png" class="img-fluid" alt="">
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                aria-labelledby="v-pills-settings-tab">
+                            <div class="tab-pane fade" id="v-pills-if" role="tabpanel"
+                                aria-labelledby="v-pills-if-tab">
 
                                 <h2 class="text-center"> Condicional if </h2>
+                                <p class="texto-contenido">
+                                    Utilice la ifdeclaración para especificar un bloque de código JavaScript que se ejecutará si una condición es verdadera.
+                                    
+                                </p>
+                                <img src="../assets/img/pagjs/imag5.png" class="img-fluid" alt="">
+                                <p  class="texto-contenido">Utilice la elsedeclaración para especificar un bloque de código que se ejecutará si la condición es falsa.
+
+                                </p>
+                                <img src="../assets/img/pagjs/imag6.png" class="img-fluid" alt="">
+                                <p>Ejemplo
+                                    Si el tiempo es inferior a las 10:00, cree un saludo de "Buenos días", si no es así, pero el tiempo es inferior a las 20:00, cree un saludo de "Buen día", de lo contrario un "Buenas noches":
+                                    
+                                </p>
+                                <img src="../assets/img/pagjs/imag7.png" class="img-fluid" alt="">
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                aria-labelledby="v-pills-settings-tab">
+                            <div class="tab-pane fade" id="v-pills-switch" role="tabpanel"
+                                aria-labelledby="v-pills-switch-tab">
+                                <h2 class="text-center"> Condicional switch </h2>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                aria-labelledby="v-pills-settings-tab">
+                            <div class="tab-pane fade" id="v-pills-for" role="tabpanel"
+                                aria-labelledby="v-pills-for-tab">
+                                <h2 class="text-center"> Bucle for </h2>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-while" role="tabpanel"
+                                aria-labelledby="v-pills-while-tab">
+                                <h2 class="text-center"> Bucle while </h2>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-doWhile" role="tabpanel"
+                                aria-labelledby="v-pills-doWhile-tab">
+                                <h2 class="text-center"> Bucle do while </h2>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-arrays" role="tabpanel"
+                                aria-labelledby="v-pills-arrays-tab">
+                                <h2 class="text-center"> Arrays </h2>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-json" role="tabpanel"
+                                aria-labelledby="v-pills-json-tab">
+                                <h2 class="text-center"> Json </h2>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-funciones" role="tabpanel"
+                                aria-labelledby="v-pills-funciones-tab">
+                                <h2 class="text-center"> Funciones </h2>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-dom" role="tabpanel"
+                                aria-labelledby="v-pills-dom-tab">
+                                <h2 class="text-center"> DOM </h2>
                             </div>
                         </div>
                     </div>
