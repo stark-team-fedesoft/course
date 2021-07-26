@@ -1,9 +1,14 @@
 const registerForm   = document.getElementById("registerForm");
 const loginForm      = document.getElementById("loginForm");
 const userRegistered = localStorage.getItem("user") ? JSON.parse( localStorage.getItem("user") ) : null;
-const loggedIn = localStorage.getItem("loggedIn");
+const loggedIn       = localStorage.getItem("loggedIn");
+const authPages      = ['login.html', 'registro.html']
 
-if( loggedIn ) location.href = "lobby.html"
+if( loggedIn ) {
+    const currentRoute = location.href.substring(location.href.lastIndexOf('/') + 1);
+    const isRouteAuth  = authPages.find( page => page === currentRoute );
+    if( isRouteAuth ) location.href = "lobby.html"
+}
 
 if( registerForm ) {
     registerForm.onsubmit = function( e ) {
