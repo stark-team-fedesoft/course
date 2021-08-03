@@ -1,0 +1,17 @@
+.nosotros{
+    background-image: url(../img/page_nosotros.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    width: 90vw;
+    height: 80%;
+    color: black;
+}
+.descripcion{
+    width: 30vw;
+    height: 20vh;
+}
+.tamanio{
+    width: 15vw;
+    height: 20vh;
+}
