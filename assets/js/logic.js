@@ -81,6 +81,8 @@ const evaluate      = document.getElementById('evaluate');
 const tot           = document.getElementById('total');
 const totModal      = document.getElementById('score-modal');
 const doTest        = document.getElementById('do-test');
+const prevButton    = document.getElementById('prev-button');
+const nextButton    = document.getElementById('next-button');
 
 // verificar calificación
 const calsStr = localStorage.getItem('califications');
@@ -99,6 +101,19 @@ tot.innerHTML = total;
 const setAnswer = ( questionId=0, answerId=' ' ) => {
     question = test.find( q => q.id === questionId );
     question.userAnswer = answerId;
+
+    prevButton.removeAttribute('disabled');
+    nextButton.removeAttribute('disabled');
+
+    if( questionId === 1 ) {
+        prevButton.setAttribute('disabled', false);
+        nextButton.removeAttribute('disabled');
+    }
+
+    if( questionId === 5 ) {
+        prevButton.removeAttribute('disabled');
+        nextButton.setAttribute('disabled', false);
+    }
 }
 
 const setCalification = () => {
@@ -185,7 +200,7 @@ test.forEach( (answer) => {
     const lb = document.createElement('br');
 
     const title     = document.createElement('label');
-    title.innerHTML = `${answer.question}`;
+    title.innerHTML = `${answer.id}. ${answer.question}`;
     title.after(lb);
     title.after(lb);
 
@@ -205,7 +220,7 @@ test.forEach( (answer) => {
 
         const label = document.createElement('label');
         label.setAttribute('for', `answer-${answer.id}-${an.id}`);
-        label.innerHTML = `${an.value}<br/>`;
+        label.innerHTML = `<p>${an.value}</p>`;
 
         div1.append(input);
         div1.append(label);
@@ -245,5 +260,3 @@ doTest.onclick = function() {
     $('#scoreModal').modal('toggle');
     $('#testModal').modal('toggle');
 }
-
-
