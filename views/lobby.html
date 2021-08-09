@@ -131,21 +131,24 @@
                                 data-bs-target="#v-pills-settings" type="button" role="tab"
                                 aria-controls="v-pills-settings" aria-selected="false">Elementos vacíos</button>
                             <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                data-bs-target="#v-pills-anatomia" type="button" role="tab"
                                 aria-controls="v-pills-settings" aria-selected="false">Anatomía de un documento
                                 HTML</button>
                             <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                data-bs-target="#v-pills-imagenes" type="button" role="tab"
                                 aria-controls="v-pills-settings" aria-selected="false">Imágenes</button>
                             <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-settings" type="button" role="tab"
                                 aria-controls="v-pills-settings" aria-selected="false">Marcado de texto</button>
                             <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                data-bs-target="#v-pills-vinculos" type="button" role="tab"
                                 aria-controls="v-pills-settings" aria-selected="false">Vínculos</button>
                             <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                data-bs-target="#v-pills-conclusion" type="button" role="tab"
                                 aria-controls="v-pills-settings" aria-selected="false">Conclusión</button>
+                            <button class="nav-link widget" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-certificacion" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">Certificacion</button>
                         </div>
                         <div class="tab-content widget" id="v-pills-tabContent">
                             <div class="tab-pane fade show active widget" id="v-pills-home" role="tabpanel"
@@ -251,19 +254,133 @@
                                 aria-labelledby="v-pills-settings-tab">
                                 <h2 class="text-center"> Elementos vacíos </h2>
                                 <p class="texto-contenido">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias recusandae accusamus
-                                    nostrum sapiente commodi animi corporis perspiciatis. Aut quo laudantium, eaque
-                                    rerum quisquam hic corporis molestiae distinctio animi cum culpa.<br><br>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ut aperiam dolorum
-                                    maiores repellendus sequi? Eligendi suscipit quidem ducimus hic! Minima eligendi
-                                    accusantium fuga maiores deserunt rem. Necessitatibus, exercitationem sint.<br><br>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci totam sunt,
-                                    dolores esse illo dignissimos odit corporis quaerat ullam voluptatibus excepturi
-                                    pariatur, atque dolorem voluptatem quam quibusdam. Laudantium, quibusdam
-                                    soluta.<br><br>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit totam mollitia
-                                    perferendis sed exercitationem eius laboriosam dolorum ipsam recusandae natus
-                                    incidunt fugit consequuntur et ratione odit, temporibus, quae facere cumque?<br><br>
+                                    Algunos elementos no poseen contenido, y son llamados elementos vacíos. Toma, por
+                                    ejemplo, el elemento <img> de nuestro HTML:
+                                    <br>
+                                    < img src="images/firefox-icon.png" alt="Mi imagen de prueba">
+                                        <br>
+                                        Posee dos atributos, pero no hay etiqueta de cierre </img> ni contenido
+                                        encerrado. Esto es porque un elemento de imagen no encierra contenido al cual
+                                        afectar. Su propósito es desplegar una imagen en la página HTML, en el lugar en
+                                        que aparece.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-anatomia" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <h2 class="text-center"> Anatomía de un documento HTML </h2>
+                                <p class="texto-contenido">
+                                    Hasta ahora has visto lo básico de elementos HTML individuales, pero estos no son
+                                    muy útiles por sí solos. Ahora verás cómo los elementos individuales son combinados
+                                    para formar una página HTML entera. Vuelve a visitar el código de tu ejemplo en
+                                    index.html (que viste por primera vez en el artículo Manejo de archivos):
+                                    <br>
+
+                                    < !DOCTYPE html>
+                                        < html>
+                                            < head>
+                                                < meta charset="utf-8">
+                                                    < title>Mi pagina de prueba</ title>
+                                                    < /head> < body>
+                                                        < img src="images/firefox-icon.png" alt="Mi imagen de prueba">
+                                                            < /body> < /html> Tienes: <br>
+
+                                                                < !DOCTYPE html> — el tipo de documento. Es un preámbulo
+                                                                    requerido. Anteriormente, cuando HTML era joven
+                                                                    (cerca de 1991/2), los tipos de documento actuaban
+                                                                    como vínculos a un conjunto de reglas que el código
+                                                                    HTML de la página debía seguir para ser considerado
+                                                                    bueno, lo que podía significar la verificación
+                                                                    automática de errores y algunas otras cosas de
+                                                                    utilidad. Sin embargo, hoy día es simplemente un
+                                                                    artefacto antiguo que a nadie le importa, pero que
+                                                                    debe ser incluido para que todo funcione
+                                                                    correctamente. Por ahora, eso es todo lo que
+                                                                    necesitas saber.
+                                                                    <br>
+                                                                    < html>
+                                                                        < /html> — el elemento < html>. Este elemento
+                                                                            encierra todo el contenido de la página
+                                                                            entera y, a veces, se le conoce como el
+                                                                            elemento raíz (root element).
+                                                                            <br>
+                                                                            < head>
+                                                                                < /head> — el elemento < head>. Este
+                                                                                    elemento actúa como un contenedor de
+                                                                                    todo aquello que quieres incluir en
+                                                                                    la página HTML que no es contenido
+                                                                                    visible por los visitantes de la
+                                                                                    página. Incluye cosas como palabras
+                                                                                    clave (keywords), una descripción de
+                                                                                    la página que quieres que aparezca
+                                                                                    en resultados de búsquedas, código
+                                                                                    CSS para dar estilo al contenido,
+                                                                                    declaraciones del juego de
+                                                                                    caracteres, etc.
+                                                                                    < meta charset="utf-8"> — < meta>.
+                                                                                            Este elemento establece el
+                                                                                            juego de caracteres que tu
+                                                                                            documento usará en utf-8,
+                                                                                            que incluye casi todos los
+                                                                                            caracteres de todos los
+                                                                                            idiomas humanos.
+                                                                                            Básicamente, puede manejar
+                                                                                            cualquier contenido de texto
+                                                                                            que puedas incluir. No hay
+                                                                                            razón para no establecerlo,
+                                                                                            y puede evitar problemas en
+                                                                                            el futuro.
+                                                                                            <br>
+                                                                                            < title></ title> — el
+                                                                                            elemento < title> establece
+                                                                                                el título de tu página,
+                                                                                                que es el título que
+                                                                                                aparece en la pestaña o
+                                                                                                en la barra de título
+                                                                                                del navegador cuando la
+                                                                                                página es cargada, y se
+                                                                                                usa para describir la
+                                                                                                página cuando es añadida
+                                                                                                a los marcadores o como
+                                                                                                favorita.
+                                                                                                <br>
+                                                                                                < body>
+                                                                                                    < /body> — el
+                                                                                                        elemento < body>
+                                                                                                        . Encierra todo
+                                                                                                        el contenido que
+                                                                                                        deseas mostrar a
+                                                                                                        los usuarios web
+                                                                                                        que visiten tu
+                                                                                                        página, ya sea
+                                                                                                        texto, imágenes,
+                                                                                                        videos, juegos,
+                                                                                                        pistas de audio
+                                                                                                        reproducibles, y
+                                                                                                        demás.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-imagenes" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <h2 class="text-center"> Imagenes </h2>
+                                <p class="texto-contenido">
+                                    Algunos elementos no poseen contenido, y son llamados elementos vacíos. Toma, por
+                                    ejemplo, el elemento < img> de nuestro HTML:
+                                    <br>
+                                    < img src="images/firefox-icon.png" alt="Mi imagen de prueba">
+                                        <br>
+                                        Posee dos atributos, pero no hay etiqueta de cierre < /img> ni contenido
+                                        encerrado. Esto es porque un elemento de imagen no encierra contenido al cual
+                                        afectar. Su propósito es desplegar una imagen en la página HTML, en el lugar en
+                                        que aparece.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-certificacion" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <h2 class="text-center"> Certificacion </h2>
+                                <p class="texto-contenido">
+                                    <div id="examen">
+                                        <button id="btnExamen" class="btn btn-info">Realizar examen</button>
+                                    </div>  
                                 </p>
                             </div>
                         </div>
