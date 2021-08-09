@@ -1,17 +1,69 @@
-.nosotros{
-    background-image: url(../img/page_nosotros.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   
-    width: 90vw;
-    height: 80%;
-    color: black;
+.nosotros {
+  background-image: url(../img/page_nosotros.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  width: 90vw;
+  height: 80%;
+  color: black;
 }
-.descripcion{
-    width: 30vw;
-    height: 20vh;
+.banner-title {
+    margin-top: 50px;
 }
-.tamanio{
-   
-    height: 35vh;
+.descripcion {
+  width: 30vw;
+  height: 20vh;
+}
+.tamanio {
+  height: 35vh;
+}
+.img {
+    border: 10px solid #202124;
+  /* -webkit-box-shadow: -18px -9px 4px 2px #c976ff;
+  box-shadow: -18px -9px 4px 2px #c976ff; */
+}
+.cajaImagen {
+    text-align: center;
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+.btnicono {
+    margin-bottom: 10px;
+}
+.liderTec {
+    color: rgb(60, 136, 250);
+}
+.liderMas {
+    color: rgb(245, 62, 62);
+}
+.liderFront {
+    color: rgb(247, 247, 60);
+}
+.productOwner {
+    color: rgb(58, 255, 58);
+}
+.liderBack {
+    color: rgb(255, 50, 255);
+}
+.liderPrueba {
+    color: rgb(250, 183, 59);
 }
